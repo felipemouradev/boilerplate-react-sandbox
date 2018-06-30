@@ -1,5 +1,5 @@
 /**
- * Tests for HomePage sagas
+ * Tests for ListMonths sagas
  */
 
 import { put, takeLatest } from 'redux-saga/effects';

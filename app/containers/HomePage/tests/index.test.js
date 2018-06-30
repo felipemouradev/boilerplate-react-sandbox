@@ -1,5 +1,5 @@
 /**
- * Test the HomePage
+ * Test the ListMonths
  */
 
 import React from 'react';
@@ -11,7 +11,7 @@ import { mapDispatchToProps } from '../index';
 import { changeUsername } from '../actions';
 import { loadRepos } from '../../App/actions';
 
-describe('<HomePage />', () => {
+describe('<ListMonths />', () => {
   it('should render the repos list', () => {
     const renderedComponent = shallow(
       <HomePage loading error={false} repos={[]} />

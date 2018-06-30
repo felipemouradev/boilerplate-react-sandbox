@@ -7,6 +7,8 @@ import { combineReducers } from 'redux-immutable';
 import { LOCATION_CHANGE } from 'react-router-redux';
 
 import globalReducer from 'containers/App/reducer';
+import listMonthReducer from './containers/ListMonths/reducer';
+import modalRendimentos from './containers/ModalRendimentos/reducer'
 
 /*
  * routeReducer
@@ -43,6 +45,8 @@ export default function createReducer(injectedReducers) {
   return combineReducers({
     route: routeReducer,
     global: globalReducer,
+    list_months: listMonthReducer,
+    modal_rendimentos: modalRendimentos,
     ...injectedReducers,
   });
 }

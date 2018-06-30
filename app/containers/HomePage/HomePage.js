@@ -1,5 +1,5 @@
 /*
- * HomePage
+ * ListMonths
  *
  * This is the first thing users see of our App, at the '/' route
  */
@@ -10,7 +10,8 @@ import { Helmet } from 'react-helmet';
 import ReposList from 'components/ReposList';
 import './style.scss';
 
-export default class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+export default class HomePage extends React.PureComponent {
+  // eslint-disable-line react/prefer-stateless-function
   /**
    * when initial state username is not null, submit the form to load repos
    */
